@@ -213,7 +213,7 @@ class JobRow(ctk.CTkFrame):
 
         name_color = ('#111827', 'white') if job_data["enabled"] else "#6b7280"
         ctk.CTkLabel(info_frame, text=job_data["name"], font=name_font,
-                     text_color=name_color).pack(anchor="w")
+                     text_color=name_color, justify="left", wraplength=280).pack(anchor="w")
 
         desc = job_data.get("description") or "No description"
         if desc == "No description available.":
