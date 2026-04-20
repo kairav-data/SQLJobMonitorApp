@@ -75,6 +75,10 @@ python main.py
 
 ```bash
 build.bat
+
+# Create exe file
+pyinstaller --noconfirm --onefile --windowed --name "SQL_Job_Monitor" "main.py"
+
 ```
 
 The packaged `.exe` will appear in the `dist/` folder and can be distributed without a Python runtime.
